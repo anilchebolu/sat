@@ -6,3 +6,17 @@ ul { list-style-type: none; line-height: 30px;}
     border-radius: 10px;
     color: black; 	
 }
+.score
+{
+	margin: 20px;
+	background-color: tan;
+}
+
+tr.score
+{
+	border-spacing: 10px;
+}
+td.score
+{
+border-spacing: 10px;
+}
