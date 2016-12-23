@@ -5,10 +5,32 @@
 <title>SAT Test</title>
 <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <link rel="stylesheet" type="text/css" href="sat-app.css" media="screen" />
+<script type="text/javascript">
+	function displayScores()
+	{
+		var srchDiv = "q1";
+		// = true;
 
+		var url = window.location.href;
+		alert (url);
+		var qPar = url.split("?");
+		var params = {}, queries, temp, i, l;
+		if (qPar.length > 1)
+		{
+			queries = qPar[1].split("&");
+			for ( i = 0, l = queries.length; i < l; i++ ) {
+		        temp = queries[i].split('=');
+		        if (temp[0]=='total')
+		        {
+		        	document.getElementById("correct").innerHTML = temp[1];
+		        }
+	    	}	
+		}
+	}
+</script>
 </head>
 
-<body onload="displayQuestionDiv()">
+<body onload="displayScores()">
 
 	<div class="score">
 	<!-- Question -->
@@ -46,7 +68,7 @@
 	10 
 	</td>
 
-	<td>
+	<td id="correct">
 	8
 	</td>
 
