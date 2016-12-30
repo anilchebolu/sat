@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>SAT Test</title>
+<script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="sat-app.css" media="screen" />
+<script type="text/javascript">
+	function displayQuestionDiv()
+	{
+		var srchDiv = "q1";
+		// = true;
+
+		var url = window.location.href;
+		var qPar = url.split("?");
+		var params = {}, queries, temp, i, l;
+		if (qPar.length > 1)
+		{
+			queries = qPar[1].split("&");
+			for ( i = 0, l = queries.length; i < l; i++ ) {
+		        temp = queries[i].split('=');
+		        if (temp[0]=='disp')
+		        {
+		        	var x = document.getElementById(temp[1]).style.display='block';
+		          	break;
+		        }
+	    	}	
+		}
+	}
+</script>
+</head>
+
+<body onload="displayQuestionDiv()">
+
+	<div id="q0" style="display: none">
+	<!-- Question -->
+	<span> Each sentence below has one or two blanks, each blank indicating that something has been omitted. Beneath the sentence are five words or sets of words labeled A through E. Choose the word or set of words that, when inserted in the sentence, best fits the meaning of the sentence as a whole. <br>
+	Example:
+Hoping to ------- the dispute, negotiators proposed a compromise that they felt would be ------- to both labor and management.<br>
+Answer:E
+ </span>
+<!--.-->
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) enforce . . useful</li>
+		<li>(B) end . . divisive</li>
+		<li>(C) overcome . . unattractive</li>
+		<li>(D) extend . . satisfactory</li>
+		<li>(E) resolve . . acceptable</li>
+	</ul>
+	</div>
+
+
+	<div id="q1" style="display: none">
+	<!-- Question -->
+	<span> 1. The-------of the moon from the first new moon to the next takes ------- a month which is 28 days.TRAIN ME </span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) pattern . . precisely</li>
+		<li>(B) lunation . . exactly</li>
+		<li>(C) transition . . foreseen</li>
+		<li>(D) interesting . . predictable</li>
+		<li>(E) exciting . . uncertain</li>
+	</ul>
+	</div>
+
+
+<div id="q2" style="display: none">
+	<!-- Question -->
+	<span> 2. Gully's musical compositions are -------: phrases are clipped, broken into sections, and split apart by long rests. TRAIN ME
+ </span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) garnished</li>
+		<li>(B) improvisational</li>
+		<li>(C) fragmented</li>
+		<li>(D) cautious</li>
+		<li>(E) uniform</li>
+	</ul>
+	</div>
+
+
+	<div id="q3" style="display: none">
+	<!-- Question -->
+	<span> 3. The consumer advocate claimed that while drug manufacturers ------- the supposed advantages of their proprietary brands, generic versions of the same medications are often equally -------. </span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) tout . . efficacious</li>
+		<li>(B) research . . innocuous</li>
+		<li>(C) market . . prohibitive</li>
+		<li>(D) laud . . counterproductive</li>
+		<li>(E) extract . . prescriptive</li>
+	</ul>
+	</div>
+
+
+
+<div id="q4" style="display: none">
+	<!-- Question -->
+	<span> 4. Latoya’s-------is shown by her ability to be-------: she can see her own faults more clearly than anyone else can. </span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) perceptiveness . . self-centered</li>
+		<li>(B) objectivity . . restrictive</li>
+		<li>(C) cynicism . . self-destructive</li>
+		<li>(D) open-mindedness . . complacent</li>
+		<li>(E) insightfulness . . self-critical </li>
+	</ul>
+	</div>
+
+
+	<div id="q5" style="display: none">
+	<!-- Question -->
+	<span>  5. The bearded dragon lizard is a voracious eaabstemiouster,so------- that it will consume as many insects as possible</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) abstemious</li>
+		<li>(B) cannibalistic</li>
+		<li>(C) slovenly</li>
+		<li>(D) insatiable</li>
+		<li>(E) unpalatable</li>
+	</ul>
+	</div>
+
+
+
+   <div id="q6" style="display: none">
+	<!-- Question -->
+	<span> 6. Because drummer Tony Williams paved the way for later jazz-fusion musicians, he is considered a ------- of that style </span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) connoisseur</li>
+		<li>(B) revivalist</li>
+		<li>(C) beneficiary</li>
+		<li>(D) disparager</li>
+		<li>(E) progenitor</li>
+	</ul>
+	</div>
+
+
+
+	<div id="q7" style="display: none">
+	<!-- Question -->
+	<span> 7. The politician’s speech to the crowd was composed of nothing but -------, a bitter railing against the party’s opponents.</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) digressions</li>
+		<li>(B) diatribes</li>
+		<li>(C) platitudes</li>
+		<li>(D) machinations</li>
+		<li>(E) acclamations</li>
+	</ul>
+	</div>
+
+
+	<div id="q8" style="display: none">
+	<!-- Question -->
+	<span> 8. Favoring economy of expression in writing,the professor urged students toward a ------- rather than an ------- prose style.</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) spare . . ornate</li>
+		<li>(B) terse . . opinionated</li>
+		<li>(C) personal . . academic</li>
+		<li>(D) baroque . . embellished</li>
+		<li>(E) repetitive . . intricate</li>
+	</ul>
+	</div>
+
+
+	<div id="q9" style="display: none">
+	<!-- Question -->
+	<span> The following sentences test correctness and effectiveness of expression. Part of each sentence or the entire sentence is underlined; beneath each sentence are five ways of phrasing the underlined material. Choice A repeats the original phrasing; the other four choices are different. If you think the original phrasing produces a better sentence than any of the alternatives, select choice A; if not, select one of the other choices.
+In making your selection, follow the requirements of standard written English; that is, pay attention to grammar, choice of words, sentence construction, and punctuation. Your selection should result in the most effective sentence—clear and precise, without awkwardness or ambiguity.<br>
+EXAMPLE:
+9. Laura Ingalls Wilder published her first book <u>and she was sixty-five years old then.</u><br>
+Answer:B</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) and she was sixty-five years old then </li>
+		<li>(B) when she was sixty-five</li>
+		<li>(C) at age sixty-five years old</li>
+		<li>(D) upon the reach in go sixty-five years</li>
+		<li>(E) at the time when she was sixty-five</li>
+	</ul>
+	</div>
+
+
+	<div id="q10" style="display: none">
+	<!-- Question -->
+	<span> 10. The library is <u>older than it but still just as beautiful as the courthouse.</u></span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) older than it but still just as beautiful as the courthouse</li>
+		<li>(B) older and it is just as beautiful as the courthouse</li>
+		<li>(C) older than the courthouse; it is just as beautiful as it</li>
+		<li>(D) older than the courthouse but just as beautiful</li>
+		<li>(E) just as beautiful as the courthouse and it is older
+than it</li>
+	</ul>
+	</div>
+
+
+<div id="q11" style="display: none">
+	<!-- Question -->
+	<span> 11. WinslowHomer,one of America’s foremost artists, <u>spent his last 27 years and painted</u> on the scenic Maine coast.</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) spent his last 27 years and painted</li>
+		<li>(B) spent his last 27 years having painted</li>
+		<li>(C) spent his last 27 years painting</li>
+		<li>(D) having spent his last 27 years doing his painting</li>
+		<li>(E) spending his last 27 years painting</li>
+	</ul>
+	</div>
+
+
+	<div id="q12" style="display: none">
+	<!-- Question -->
+	<span> 12. Researchers are experimenting with various techniques for preventing the accumulation in water of high levels of <u>nitrogen, which can kill plants and animals.</u>
+</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) nitrogen, which can kill plants and animals</li>
+		<li>(B) nitrogen; plants and animals can be killed</li>
+		<li>(C) nitrogen, that is what can kill plants and animals</li>
+		<li>(D) nitrogen, they could kill plants and animals</li>
+		<li>(E) nitrogen, and they can kill plants and animals</li>
+	</ul>
+	</div>
+
+
+	<div id="q13" style="display: none">
+	<!-- Question -->
+	<span> 13. When the news spread <u>how new goldfields were discovered</u> in Nome, Alaska, thousands abandoned Dawson, the site of the previous gold rush.
+
+</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) how new goldfields were discovered</li>
+		<li>(B) how there was discovery of new goldfields</li>
+		<li>(C) about new goldfields, which they discovered</li>
+		<li>(D) about new goldfields, and they were discovered</li>
+		<li>(E) about new goldfields that had been discovered</li>
+	</ul>
+	</div>
+
+
+	<div id="q14" style="display: none">
+	<!-- Question -->
+	<span> 14. When the Berlin Wall,long a symbol of the Cold War, began to be torn down in 1989, five million people went to Berlin <u>to celebrate that.</u> </span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) to celebrate that</li>
+		<li>(B) for its celebration</li>
+		<li>(C) to celebrate</li>
+		<li>(D) in celebration of that</li>
+		<li>(E) in celebrating</li>
+	</ul>
+	</div>
+
+
+
+</body>
+</html>
+

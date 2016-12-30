@@ -6,6 +6,7 @@ ul { list-style-type: none; line-height: 30px;}
     border-radius: 10px;
     color: black; 	
     height: 200px;
+    overflow-y: auto;
 }
 .score
 {

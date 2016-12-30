@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>SAT Test</title>
+<script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="sat-app.css" media="screen" />
+<script type="text/javascript">
+	function displayQuestionDiv()
+	{
+		var srchDiv = "q1";
+		// = true;
+
+		var url = window.location.href;
+		var qPar = url.split("?");
+		var params = {}, queries, temp, i, l;
+		if (qPar.length > 1)
+		{
+			queries = qPar[1].split("&");
+			for ( i = 0, l = queries.length; i < l; i++ ) {
+		        temp = queries[i].split('=');
+		        if (temp[0]=='disp')
+		        {
+		        	var x = document.getElementById(temp[1]).style.display='block';
+		          	break;
+		        }
+	    	}	
+		}
+	}
+</script>
+</head>
+
+<body onload="displayQuestionDiv()">
+
+	<div id="q1" style="display: none">
+	<!-- Question -->
+	<span> 1. What is the value of n in this equation? 9000= 0.9 x 10 TRAIN ME<sup>n</sup> ? </span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) 1</li>
+		<li>(B) 2</li>
+		<li>(C) 3</li>
+		<li>(D) 4</li>
+		<li>(E) 5</li>
+	</ul>
+	</div>
+
+
+	<div id="q2" style="display: none">
+	<!-- Question -->
+	<span>
+     2. On Christmas Day Martha, Emily, and Darin exchanged gifts. Martha had m gifts but Emily had 3 times the amount of gifts as Martha. Darin had 5 fewer gifts than Emily, how many gifts did Darin recieve in terms of m? TRAIN ME
+	</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn><mi>m</mi><mo>+</mo><mn>5</mn> </math></li>
+		<li>(B) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn><mi>m</mi><mo>-</mo><mn>5</mn> </li>
+		<li>(C) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>3</mn><mi>m</mi><mo>+</mo><mn>5</mn> </li>
+		<li>(D) (m+5)+ 3</li>
+		<li>(E) (m/3)+ 5</li>
+	</ul>
+	</div>
+ 
+	<div id="q3" style="display: none">
+	<!-- Question -->
+	<span>
+	If x and y are positive integers, what are all the solutions (x, y) of the equation 3x + 2y = 11?
+
+	</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A)   (1,4) only </li>
+		<li>(B)   (3,1) only</li>
+		<li>(C)   (1,4) and (2,2)</li>
+		<li>(D)   (1,4) and (3,1)</li>
+		<li>(E)   (2,2) and (3,1)</li>
+	</ul>
+	</div>
+
+
+	<div id="q4" style="display: none">
+	<!-- Question -->
+	<span>
+	
+	4. A company’s profit, P, in dollars, for producing x machines in one day is given by 
+	<math xmlns="http://www.w3.org/1998/Math/MathML"> 
+	<mi>P</mi><mo>=</mo><mn>500</mn><mi>x</mi><mo>-</mo><mn>500</mn><msup><mi>x</mi><mn>2</mn></msup>
+	</math>
+	If the company produces 10 machines in one day, then, according to this formula, what is the profit for that day?
+	</span>
+
+		
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) $5,000</li>
+		<li>(B) $4,000</li>
+		<li>(C) $3,000</li>
+		<li>(D) $2,000</li>
+		<li>(E) $1,000 </li>
+	</ul>
+	</div>
+
+
+	<div id="q5" style="display: none">
+	<!-- Question -->
+	<span>
+	12 - n, 12, 12 + n<br/>
+	5. What is the average(arithmeticmean) of the 3 quantities in the list above? 
+	
+		
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) 4</li>
+		<li>(B) 12</li>
+		<li>((C) 18</li>
+		<li>(D) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>4</mn><mo>+</mo><mfrac><mrow><mi>n</mi></mrow>
+		<mrow><mn>3</mn></mrow></mfrac></math></li>
+		<li> (E)<math xmlns="http://www.w3.org/1998/Math/MathML"> <mn>12</mn><mo>+</mo><mfrac><mrow><mi>n</mi></mrow>
+		<mrow><mn>3</mn></mrow></mfrac></math>  </li>
+	</ul>
+	</div>
+
+
+
+	<div id="q6" style="display: none">
+	<!-- Question -->
+	<img src="q6.png"></br>
+	<span>
+	6. In isosceles triangle ABC above, 
+	<math xmlns="http://www.w3.org/1998/Math/MathML"><menclose notation="top">
+    <mi> A </mi>
+    <mi> M </mi>
+	</menclose></math>
+	and 
+		<math xmlns="http://www.w3.org/1998/Math/MathML"><menclose notation="top">
+	<mi> C </mi>
+	<mi> M </mi>
+	</menclose></math>are the angle bisectors of angle BAC and angle BCA. What is the measure of angle AMC ?
+	</span>
+		
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) <math><msup><mn>110</mn><mi>o</mi></msup></math></li>
+		<li>(B) <math><msup><mn>115</mn><mi>o</mi></msup></math></li>
+		<li>(C) <math><msup><mn>120</mn><mi>o</mi></msup></math></li>
+		<li>(D) <math><msup><mn>125</mn><mi>o</mi></msup></math></li>
+		<li>(E) <math><msup><mn>130</mn><mi>o</mi></msup></math></li>
+	</ul>
+	</div>
+
+	<div id="q7" style="display: none">
+	<!-- Question -->
+	<span>
+		7. A fruit salad is made from pineapples, pears, and peaches mixed in the ratio of 2 to 3 to 5, respectively, by weight. What fraction of the mixture by weight is pineapple?
+	</span>
+		
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac><mrow><mn>1</mn></mrow><mrow><mn>5</mn></mrow></mfrac></math></li>
+		<li>(B) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac><mrow><mn>3</mn></mrow><mrow><mn>10</mn></mrow></mfrac></math></li>
+		<li>(C) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac></math></li>
+		<li>(D) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></math></li>
+		<li>(E) <math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></math></li>
+	</ul>	
+	</div>
+
+ 	<div id="q8" style="display: none">
+	<!-- Question -->
+	<span>
+	<img src="q8.png"></br>
+	<span>
+	
+	8. In the figure above, square RSTU is inscribed in the circle. What is the degree measure of arc ST ?
+
+	</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A)  <math><msup><mn>45</mn><mi>o</mi></msup></math></li>
+		<li>(B)  <math><msup><mn>60</mn><mi>o</mi></msup></math></li>
+		<li>(C)  <math><msup><mn>90</mn><mi>o</mi></msup></math></li>
+		<li>(D)  <math><msup><mn>120</mn><mi>o</mi></msup></math></li>
+		<li>(E)  <math><msup><mn>180</mn><mi>o</mi></msup></math></li>
+	</ul>
+	</div>
+
+	<div id="9" style="display: none">
+	<!-- Question -->
+	<span>
+	9. If P and Q are two sets of numbers, and if every number in P is also in Q, which of the following CANNOT be true?
+
+	</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A)   4 is in both P and Q. </li>
+		<li>(B)   5 is in neither P nor Q.</li>
+		<li>(C)   6 is in P, but not in Q.</li>
+		<li>(D)   7 is in Q, but not in P.</li>
+		<li>(E)   If 8 is not in Q, then 8 is not in P.</li>
+	</ul>
+	</div>
+
+	<div id="q10" style="display: none">
+	<!-- Question -->
+	<span>
+	10. What is the maximum number of rectangular blocks measuring 3 inches by 2 inches by 1 inch that can be packed into a cube-shaped box whose interior measures 6 inches on an edge?
+
+
+	</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A)   24 </li>
+		<li>(B)   28</li>
+		<li>(C)   30</li>
+		<li>(D)   36</li>
+		<li>(E)   40</li>
+	</ul>
+	</div>
+
+	<div id="q11" style="display: none">
+	<!-- Question -->
+	<span>
+	
+	11. If 
+	<math xmlns="http://www.w3.org/1998/Math/MathML"> <mi>a</mi><mo>&#x2260;</mo><mn>0</mn> </math> and 
+	<math xmlns="http://www.w3.org/1998/Math/MathML"> <mfrac><mn>5</mn><mi>x</mi></mfrac> <mo>=</mo> <mfrac><mrow><mn>5</mn><mo>+</mo><mi>a</mi></mrow><mrow><mi>x</mi><mo>+</mo><mi>a</mi></mrow></mfrac></math>
+	what is the value of 
+	<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>x</mi></math> ?</br>
+	</span>
+
+	<!-- Answer Options -->
+	<ul>
+		<li>(A) -5</li>
+		<li>(B) -1</li>
+		<li>(C) 1</li>
+		<li>(D) 2</li>
+		<li>(E) 5</li>
+	</ul>
+	</div>
+
+
+</body>
+</html>
+
