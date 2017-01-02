@@ -22,3 +22,6 @@ td.score
 {
 border-spacing: 10px;
 }
+li.leaf {
+background: url('file:///Users/anilchebolu/Documents/workspace/sat/correctSign.png’);
+}
