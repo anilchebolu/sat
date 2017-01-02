@@ -22,6 +22,10 @@ td.score
 {
 border-spacing: 10px;
 }
+
 li.leaf {
-background: url('file:///Users/anilchebolu/Documents/workspace/sat/correctSign.png’);
+background: url(‘https://anilchebolu.github.io/sat/correctSign.png’) no-repeat left top;
+height: 54px;
+padding-left: 44px;
+padding-top: 3px;
 }
