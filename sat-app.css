@@ -23,8 +23,6 @@ td.score
 border-spacing: 10px;
 }
 
-li.leaf {
-background: url(‘correctSign.png’) no-repeat left top;
-height: 500px;
-width: 500px;
+li.red {
+    list-style-image: url('correctSign.gif');
 }
