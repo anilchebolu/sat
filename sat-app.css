@@ -24,7 +24,7 @@ border-spacing: 10px;
 }
 
 li.leaf {
-background: url(‘https://anilchebolu.github.io/sat/correctSign.png’) no-repeat left top;
+background: url(‘correctSign.png’) no-repeat left top;
 height: 54px;
 width: 50px;
 }
