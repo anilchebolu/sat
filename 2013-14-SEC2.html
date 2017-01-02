@@ -21,10 +21,38 @@
 		        temp = queries[i].split('=');
 		        if (temp[0]=='disp')
 		        {
-		        	var x = document.getElementById(temp[1]).style.display='block';
+		        	if (temp[1]=='all')
+		        	{
+		        		displayAll ();
+		        	}
+		        	else
+		        	{
+		        		var x = document.getElementById(temp[1]).style.display='block';
+		        	}
 		          	break;
 		        }
 	    	}	
+		}
+	}
+	function displayAll()
+	{
+		var count = 4; // set total count from url
+		for (var i = 1; i <= count; i++)
+		{
+			var stringID = 'q' + i;
+			document.getElementById(stringID).style.display='block'
+			var htmlString = document.getElementById(stringID).innerHTML;
+			var cString = '<img src="correctSign.png" width="15" heighth="15" />';
+			var wString = '<img src="wrongSign.png" width="15" heighth="15" />';
+			if (i%2 == 1)
+			{
+
+				document.getElementById(stringID).innerHTML = cString + htmlString ;
+			}
+			else
+			{
+				document.getElementById(stringID).innerHTML = wString + htmlString ;
+			}
 		}
 	}
 </script>
@@ -33,13 +61,14 @@
 <body onload="displayQuestionDiv()">
 
 	<div id="q1" style="display: none">
+	
 	<!-- Question -->
 	<span> 1. When 70,000 is written as 7.0 x 10 <sup> n </sup> what is the
 	value of n ? </span>
 
 	<!-- Answer Options -->
 	<ul>
-		<li class="red">(A) 1</li>
+		<li>(A) 1</li>
 		<li>(B) 2</li>
 		<li>(C) 3</li>
 		<li>(D) 4</li>
@@ -70,7 +99,7 @@
 	<div id="q3" style="display: none">
 	<!-- Question -->
 	<span>
-	If x and y are positive integers, what are all the solutions (x, y) of the equation 3x + 2y = 11?
+	3. If x and y are positive integers, what are all the solutions (x, y) of the equation 3x + 2y = 11?
 
 	</span>
 

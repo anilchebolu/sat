@@ -23,8 +23,12 @@ td.score
 border-spacing: 10px;
 }
 
-li.red {
-    list-style-image: url('https://anilchebolu.github.io/sat/correctSign.png');
-    list-style-position: right;
+li.red
+{
+    color: red;
+ }
 
-}
+ li.green
+ {
+ 	color: green;
+ }
